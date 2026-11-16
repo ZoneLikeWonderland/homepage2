@@ -136,18 +136,19 @@ html:has(.study-view[open]){scrollbar-gutter:auto}
 
 .study-close:focus-visible{outline:1px solid #74776f;outline-offset:0}
 
-/* A quiet, frameless visitor globe lives alongside the personal notes. */
+/* A quiet, frameless visitor map lives alongside the personal notes. */
 .more-about{grid-template-columns:.9fr 1.2fr 1fr 196px;gap:30px;align-items:start}
 .visitor-corner{width:196px;justify-self:end}
 .visitor-corner h3{font-size:11px;font-weight:500;color:var(--muted);margin-bottom:14px}
 .visitor-stage{position:relative;width:196px;min-height:139px}
 .visitor-preview{display:block;width:196px;height:112px;padding-top:8px}
-.visitor-live{width:196px;position:absolute;inset:0;opacity:0;transition:opacity .35s ease;pointer-events:none}
+.visitor-live{width:196px;position:absolute;inset:0;opacity:0;transition:opacity .35s ease;pointer-events:none;margin:0!important;padding-top:8px}
 .visitor-corner.has-live .visitor-live{opacity:1;pointer-events:auto}
 .visitor-corner.has-live .visitor-preview{visibility:hidden}
 .visitor-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:9px;color:#858b82;line-height:1.5}
 .visitor-caption a{font-size:9px;margin:0;color:var(--muted)}
-.visitor-live #mapmyvisitors-widget{max-width:196px}
+.visitor-live img{width:196px;height:auto;mix-blend-mode:multiply;filter:grayscale(1);opacity:.65;transition:filter .2s ease,opacity .2s ease}
+@media(hover:hover){.visitor-live:hover img{filter:none;opacity:1}}
 @media(max-width:900px){.more-about{grid-template-columns:1fr 1fr;gap:26px}.visitor-corner{justify-self:start}}
 @media(max-width:600px){.more-about{grid-template-columns:1fr}.visitor-corner{justify-self:center;margin-top:2px}}
 @media(prefers-reduced-motion:reduce){.visitor-live{transition:none}}

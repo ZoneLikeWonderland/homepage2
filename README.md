@@ -230,18 +230,23 @@ reduced motion, and touch emulation at responsive widths from 320 to 1440 pixels
 
 ## Visitor map
 
-`visitors.js` loads the official MapMyVisitors map only on `zhanglongwen.com`
-and `www.zhanglongwen.com`. Account email: zhanglw2@shanghaitech.edu.cn.
-Account credentials are kept outside this repository. Public visitor statistics:
-https://mapmyvisitors.com/web/1c9iv.
+The footer uses Flag Counter's image-only country map, counter `O0MI`:
+https://info.flagcounter.com/O0MI. It requires no server deployment, external
+JavaScript library, API key, or subscription. The registration email is
+zhanglw2@shanghaitech.edu.cn; management information is sent by the provider.
 
-The footer links to the provider's statistics. The live widget loads third-party
-scripts and sends visits to MapMyVisitors. Local previews never load the tracker;
-they show the static public-domain Natural Earth outline in `assets/visitors/`.
-The same outline remains visible if the provider is unavailable. It contains no
-fabricated visitor locations or counts. All provider links open in new tabs.
-The provider uses PNG map backgrounds internally; local research images remain WebP.
+`visitors.js` loads exactly one external counter image, and only on
+`zhanglongwen.com` or `www.zhanglongwen.com`. No third-party scripts run on the
+homepage. Local previews never load the counter. The image is validated before
+it replaces the local public-domain Natural Earth outline in `assets/visitors/`;
+a blocked/failed request or a 1px error response leaves that outline intact,
+without error banners, fabricated visitor dots, or fabricated counts. Statistics
+links always open in new tabs. The provider supplies the live image format;
+local research assets remain WebP. Image counters may refresh more slowly than
+the provider's statistics page and only count browsers that load the image.
 
-The registered 3D globe's data endpoint returned HTML instead of JSONP during
-verification, so the owner selected the working map widget. The obsolete
-RevolverMaps embeds were removed from the retained NVPR documents.
+MapMyVisitors was removed after its host timed out on direct connections while
+working through a proxy. Its 3D data endpoint also returned HTML rather than
+JSONP. No third-party service has a guaranteed lifetime: the local outline and
+layout remain independent, and the image/statistics URLs can be replaced without
+changing the rest of the site. Old counts do not transfer automatically.
