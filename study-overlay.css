@@ -1,0 +1,16 @@
+/* This stylesheet lives inside the detail view's Shadow DOM. */
+:host{display:block;width:100%;height:100%;color:#252525;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:16px;line-height:normal}
+.study-scroll{height:100%;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#c5c5ba transparent;background:#f9f9f6}
+.study{height:var(--study-height);padding-top:26px;padding-bottom:24px}
+.gallery-frame{min-height:var(--study-height);padding-top:42px;padding-bottom:34px}
+.figure-media{position:relative;width:100%;max-height:calc(var(--study-height) - 110px)}
+.gallery-frame .figure-media img{width:100%;height:100%;max-height:none;object-fit:contain}
+.figure-preview{position:absolute;inset:0;opacity:1;transition:opacity .28s ease}
+.figure-full{position:relative;opacity:0;transition:opacity .3s ease}
+.figure-media.is-ready .figure-full{opacity:1}
+.figure-media.is-ready .figure-preview{opacity:0;pointer-events:none}
+.figure-media.has-error .figure-full{visibility:hidden}
+.gallery-frame .gallery-download{position:relative}
+.is-embedded .study-back{margin-bottom:24px}
+@media(max-width:800px){.study{height:auto;padding-top:24px}.gallery-frame{min-height:0;padding-top:28px}.figure-media{max-height:calc(var(--study-height) - 90px)}}
+@media(prefers-reduced-motion:reduce){.figure-preview,.figure-full{transition:none}}

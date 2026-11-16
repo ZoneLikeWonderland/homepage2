@@ -10,7 +10,8 @@ python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 Open <http://localhost:8000/>. There are no package dependencies, external fonts,
-CDN stylesheets, or JavaScript requirements for the homepage.
+CDN stylesheets, or build requirements. Paper entries open a full-width overlay on the current page without changing
+its URL. External resource links remain available on the homepage and open in new tabs.
 
 ## Editing
 
@@ -83,8 +84,10 @@ paper and project links. The figures retain their original authorship and rights
 All 16 entries display a fixed-size teaser to the right of their bibliographic
 details (below the text on narrow screens). Images keep their full composition with `object-fit: contain`; teaser containers
 have no background, border, or rounded frame.
-Clicking an image opens its full-resolution local WebP in a new tab. No background
-effects or JavaScript are used.
+Clicking a publication teaser opens that paper's full-width overlay on the current
+page, matching the title and whole-row behavior. Full-resolution images allow native
+right-click saving, with an additional download link for the current image.
+The homepage itself has no scrolling background effects.
 
 - `assets/teasers/`: full-size images, up to 3840 pixels wide.
 - `assets/teasers/thumbs/`: smaller previews, loaded lazily in the list.
@@ -102,10 +105,10 @@ with the profile links, separate from the Dota 2 interest.
 ## Publication links (2026-11-16)
 
 Each entry separates Project, publisher (ACM / IEEE / CVF), arXiv, and YouTube
-links when verified. Titles link to the formal publication when one exists.
+links when verified. Titles, images, and row whitespace open a full-width overlay without navigation. Resource links independently open their original destinations in new tabs.
 `assets/publication-links.json` records the links, verification sources, and
 exceptions for all 16 entries. It is a reference manifest, not a runtime dependency;
-keep it synchronized with `index.html` when editing links.
+keep it synchronized with `assets/papers.json` when editing links.
 
 DOIs were checked against publisher-deposited Crossref metadata, author project
 pages, or the papers themselves. YouTube IDs come from author project pages
@@ -121,7 +124,7 @@ article, not the separate conference video record. CLAY's GitHub remains omitted
 
 ## Publication awards
 
-Award labels next to the venue link to the official SIGGRAPH announcements.
+Award labels remain beside the venue; on detail pages they link to official SIGGRAPH announcements.
 
 - CAST: SIGGRAPH 2025 — Best Paper. <https://blog.siggraph.org/2025/06/siggraph-2025-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/>
 - CLAY: SIGGRAPH 2024 — Honorable Mention. <https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/>
@@ -157,3 +160,65 @@ The page includes canonical and Open Graph metadata for the custom domain.
 Responsive WebP sources preserve sharp images on dense displays, while a 640-pixel
 portrait avoids loading the full-size photo unnecessarily. Publication DOM order
 follows the visible reading order: text and links, then the teaser.
+
+
+## Publication gallery
+
+- `assets/papers.json`: verified publication metadata, concise editorial summaries of
+  abstracts, resource links, and gallery provenance. Summaries are labeled as such.
+- `scripts/build-papers.py`: regenerates the 16 paper documents and inert inline
+  homepage templates using the Python standard library. Run after changing the
+  manifest, gallery CSS, overlay CSS, or navigation script; it updates cache hashes.
+- `gallery.css`, `gallery.js`: sticky information on the left, a naturally scrolling
+  image sequence on the right, accessible frame controls, and reduced motion.
+- `navigation.js`: opens the selected inline template inside a native dialog and
+  restores list position/focus on close. No iframe, detail navigation, or metadata
+  request is needed on click. Shadow DOM isolates detail styles from the homepage.
+- `study-overlay.css`: full-width panel adaptations and preview-to-full-image fades.
+
+External resource links open new tabs and remain on both the homepage and detail
+view. Homepage paper titles, teasers, and whitespace share one detail button.
+The overlay spans the viewport width, with 32–64 px exposed above and below.
+The backdrop dims the original page; clicking either exposed strip, Close, Escape,
+or Publications restores the original list position. The panel fades in with a
+small upward movement and fades out on dismissal, respecting reduced motion. On narrow screens,
+information precedes the image sequence. Images retain their complete aspect ratios,
+allow native right-click saving, and each have their own Save image control.
+
+CLAY and BANG include two additional 3840 × 2160 gallery figures from the authors'
+arXiv papers. CAST includes its full 5300 × 5082 scene gallery; GaussianHair includes
+editing and relighting figures from its project page. New images preserve source
+resolution and use lossy WebP quality 95. The Google Sites image endpoints rejected
+image downloads; corresponding author-paper figures were used instead.
+
+GitHub Pages publishes this gallery with the rest of the site from `main`.
+
+Image loading uses an immediate preview followed by a decoded high-resolution WebP
+fade. Intentional hover/focus warms only the selected teaser. Gallery preview assets
+are separate from the original-resolution files; saving still uses the full image.
+
+## Interaction regression checks
+
+Row shading is restricted to mouse hover (`hover: hover` and `pointer: fine`).
+Returning keyboard focus to a study does not shade the row; keyboard focus keeps
+its own visible outline. Touch devices do not use sticky hover styling. Backdrop
+dismissal requires an uncancelled primary-button press and release outside the
+panel; right-clicks and drags out of the content do not dismiss it.
+
+`scripts/check-interactions.cjs` runs against a dedicated Chromium/Edge browser
+with remote debugging enabled and a running local preview. It closes that dedicated
+browser when successful. It needs Node.js and the `ws` package; set
+`HOMEPAGE_WS_MODULE` to an existing module path if it is not locally installed.
+
+```sh
+node scripts/check-interactions.cjs '<browser-websocket-url>' 'http://127.0.0.1:8000/'
+```
+
+Optional `HOMEPAGE_QA_OUTPUT_DIR` saves screenshots. Set
+`HOMEPAGE_QA_DOWNLOAD_DIR` to a path on the browser's host to additionally verify
+an actual full-resolution download and its byte count.
+
+Coverage includes all 16 studies, pointer-only highlighting, restored focus/scroll,
+Enter/Space/Tab/Escape, rapid reopening, outside-click gesture boundaries, direct
+resource links, gallery scrolling, full-image loading and fallback previews,
+reduced motion, and touch emulation at responsive widths from 320 to 1440 pixels.

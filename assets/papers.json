@@ -1,0 +1,765 @@
+[
+  {
+    "id": "sato",
+    "title": "Strips as Tokens: Artist Mesh Generation with Native UV Segmentation",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://ruixu.me/html/SATO/index.html"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3811286"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.09132"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Xrvitd/SATO"
+      }
+    ],
+    "sources": [
+      "https://ruixu.me/html/SATO/index.html",
+      "https://doi.org/10.1145/3811286",
+      "https://api.crossref.org/works?filter=doi:10.1145/3811286",
+      "https://arxiv.org/abs/2604.09132"
+    ],
+    "notes": [
+      "No verified author-provided YouTube video found."
+    ],
+    "authors_html": "Rui Xu, Dafei Qin, Kaichun Qiao, Qiujie Dong, Huaijin Pi, Qixuan Zhang, <strong>Longwen Zhang</strong>, Lan Xu, Jingyi Yu, Wenping Wang, Taku Komura",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2026</span>",
+    "overview": "SATO generates artist-style meshes with a sequence representation based on triangle strips. Connected faces and explicit UV boundaries help preserve coherent edge flow and meaningful surface partitions. The same representation can produce triangular or quadrilateral meshes, allowing training to combine large triangle datasets with more structured quad examples.",
+    "overview_source": "https://arxiv.org/abs/2604.09132",
+    "gallery": [
+      {
+        "image": "assets/teasers/sato.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2604.09132",
+        "width": 2560,
+        "height": 1280,
+        "preview": "assets/teasers/thumbs/sato.webp"
+      }
+    ]
+  },
+  {
+    "id": "genpie",
+    "title": "GenPIE: A Time-Resolved Plenoptic Imager",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://wangzh1.github.io/GenPIE/"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3811281"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=sbeHkw42Q34"
+      }
+    ],
+    "sources": [
+      "https://wangzh1.github.io/GenPIE/",
+      "https://doi.org/10.1145/3811281",
+      "https://api.crossref.org/works?filter=doi:10.1145/3811281",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=sbeHkw42Q34&format=json"
+    ],
+    "notes": [
+      "No verified arXiv entry found; project provides a local paper PDF."
+    ],
+    "authors_html": "Ziheng Wang, Siyuan Shen, Huanyu Xu, Kaichun Qiao, <strong>Longwen Zhang</strong>, Qixuan Zhang, Qilin Sun, Shiying Li, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2026</span>",
+    "overview": "GenPIE reconstructs light transport across space, viewing direction, and time from sparse transient observations. A reconfigurable capture system separates illumination from detection, while generative geometry priors and inverse transient rendering recover regions that are difficult to observe. The resulting representation supports applications such as separating light bounces, correcting time distortion, and changing illumination over time.",
+    "overview_source": "https://wangzh1.github.io/GenPIE/",
+    "gallery": [
+      {
+        "image": "assets/teasers/genpie.webp",
+        "caption": "Teaser",
+        "source": "https://wangzh1.github.io/GenPIE/",
+        "width": 2560,
+        "height": 1377,
+        "preview": "assets/teasers/thumbs/genpie.webp"
+      }
+    ]
+  },
+  {
+    "id": "tapestry",
+    "title": "TAPESTRY: From Geometry to Appearance via Consistent Turntable Videos",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://zerone182.github.io/TAPESTRY/"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.17735"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=CJGO7si86RU"
+      }
+    ],
+    "sources": [
+      "https://zerone182.github.io/TAPESTRY/",
+      "https://arxiv.org/abs/2603.17735",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=CJGO7si86RU&format=json"
+    ],
+    "notes": [],
+    "authors_html": "Yan Zeng, Haoran Jiang, Kaixin Yao, Qixuan Zhang, <strong>Longwen Zhang</strong>, Lan Xu, Jingyi Yu",
+    "venue_html": "arXiv <span>· 2026</span>",
+    "overview": "TAPESTRY gives untextured 3D meshes coherent appearance through geometry-conditioned turntable videos. Rendered geometric features guide video generation so that the object remains consistent across viewpoints. A subsequent reconstruction process fills self-occluded areas and transfers the generated appearance into textures or neural representations, connecting video synthesis with complete 3D asset creation.",
+    "overview_source": "https://arxiv.org/abs/2603.17735",
+    "gallery": [
+      {
+        "image": "assets/teasers/tapestry.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2603.17735",
+        "width": 2560,
+        "height": 1170,
+        "preview": "assets/teasers/thumbs/tapestry.webp"
+      }
+    ]
+  },
+  {
+    "id": "bang",
+    "title": "BANG: Dividing 3D Assets via Generative Exploded Dynamics",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/bang7355608"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3730840"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2507.21493"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=UL5nSyg2Aps"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/bang7355608",
+      "https://doi.org/10.1145/3730840",
+      "https://api.crossref.org/works?filter=doi:10.1145/3730840",
+      "https://arxiv.org/abs/2507.21493",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=UL5nSyg2Aps&format=json"
+    ],
+    "notes": [],
+    "authors_html": "<strong>Longwen Zhang</strong>, Qixuan Zhang, Haoran Jiang, Yinuo Bai, Wei Yang, Lan Xu, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2025</span>",
+    "overview": "BANG decomposes 3D objects by generating a sequence of progressively separated parts. A pretrained 3D diffusion model, an exploded-view adapter, and temporal attention produce coherent geometry throughout this process. Spatial prompts let users choose regions to separate. The resulting components support detailed refinement, interactive editing, and workflows that print and reassemble individual parts.",
+    "overview_source": "https://arxiv.org/abs/2507.21493",
+    "gallery": [
+      {
+        "image": "assets/teasers/bang.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2507.21493",
+        "width": 3840,
+        "height": 2160,
+        "preview": "assets/teasers/thumbs/bang.webp"
+      },
+      {
+        "image": "assets/gallery/bang-journey.webp",
+        "caption": "Objects in different assembly states",
+        "source": "https://arxiv.org/html/2507.21493v1/figs/ga.jpg",
+        "width": 3840,
+        "height": 2160,
+        "preview": "assets/gallery/thumbs/bang-journey.webp"
+      },
+      {
+        "image": "assets/gallery/bang-workshop.webp",
+        "caption": "A workshop of generated parts",
+        "source": "https://arxiv.org/html/2507.21493v1/figs/ga1.jpg",
+        "width": 3840,
+        "height": 2160,
+        "preview": "assets/gallery/thumbs/bang-workshop.webp"
+      }
+    ]
+  },
+  {
+    "id": "cast",
+    "title": "CAST: Component-Aligned 3D Scene Reconstruction from an RGB Image",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/cast4"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3730841"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2502.12894"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=cloVLY6lWdI"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/cast4",
+      "https://doi.org/10.1145/3730841",
+      "https://api.crossref.org/works?filter=doi:10.1145/3730841",
+      "https://arxiv.org/abs/2502.12894",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=cloVLY6lWdI&format=json",
+      "https://blog.siggraph.org/2025/06/siggraph-2025-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+    ],
+    "notes": [],
+    "award": {
+      "label": "Best Paper",
+      "conference": "SIGGRAPH 2025",
+      "source": "https://blog.siggraph.org/2025/06/siggraph-2025-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+    },
+    "authors_html": "Kaixin Yao, <strong>Longwen Zhang</strong>, Xinhao Yan, Yan Zeng, Qixuan Zhang, Lan Xu, Wei Yang, Jiayuan Gu, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2025</span> <a class=\"paper-award\" href=\"https://blog.siggraph.org/2025/06/siggraph-2025-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/\" aria-label=\"SIGGRAPH 2025 Best Paper: official award announcement\">Best Paper</a>",
+    "overview": "CAST reconstructs a scene as individually editable 3D objects from one RGB image. It combines image segmentation, depth cues, and object relationships with generation that accounts for occlusion. Objects are then aligned to the observed scene, and a physics-aware refinement adjusts their positions to reduce floating geometry and intersections. The reconstructed scenes can support simulation and interactive applications.",
+    "overview_source": "https://arxiv.org/abs/2502.12894",
+    "gallery": [
+      {
+        "image": "assets/teasers/cast.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2502.12894",
+        "width": 2560,
+        "height": 922,
+        "preview": "assets/teasers/thumbs/cast.webp"
+      },
+      {
+        "image": "assets/gallery/cast-scenes.webp",
+        "caption": "Reconstructed scenes",
+        "source": "https://arxiv.org/html/2502.12894v1/figs/gallery.png",
+        "width": 5300,
+        "height": 5082,
+        "preview": "assets/gallery/thumbs/cast-scenes.webp"
+      }
+    ]
+  },
+  {
+    "id": "transgs",
+    "title": "Instant Gaussian Splatting Generation for High-Quality and Real-Time Facial Asset Rendering",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://dafei-qin.github.io/TransGS.github.io/"
+      },
+      {
+        "label": "IEEE",
+        "url": "https://doi.org/10.1109/TPAMI.2025.3550195"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2409.07441"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=MQTm3WTQ3KI"
+      }
+    ],
+    "sources": [
+      "https://dafei-qin.github.io/TransGS.github.io/",
+      "https://doi.org/10.1109/TPAMI.2025.3550195",
+      "https://api.crossref.org/works?filter=doi:10.1109/TPAMI.2025.3550195",
+      "https://arxiv.org/abs/2409.07441",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=MQTm3WTQ3KI&format=json"
+    ],
+    "notes": [],
+    "authors_html": "Dafei Qin, Hongyang Lin, Qixuan Zhang, Kaichun Qiao, <strong>Longwen Zhang</strong>, Jun Saito, Zijun Zhao, Jingyi Yu, Lan Xu, Taku Komura",
+    "venue_html": "IEEE TPAMI <span>· 2025</span>",
+    "overview": "TransGS converts physically based facial assets into GauFace, a structured Gaussian representation designed for efficient animation and rendering. A diffusion transformer processes patches of the asset, using UV information and aligned sampling to preserve fine visual detail. This approach connects existing facial asset workflows with interactive rendering across desktop, mobile, and virtual-reality platforms.",
+    "overview_source": "https://arxiv.org/abs/2409.07441",
+    "gallery": [
+      {
+        "image": "assets/teasers/transgs.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2409.07441",
+        "width": 2560,
+        "height": 856,
+        "preview": "assets/teasers/thumbs/transgs.webp"
+      }
+    ]
+  },
+  {
+    "id": "clay",
+    "title": "CLAY: A Controllable Large-scale Generative Model for Creating High-quality 3D Assets",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/clay-3dlm"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3658146"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2406.13897"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=YcKFp4U2Voo"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/clay-3dlm",
+      "https://doi.org/10.1145/3658146",
+      "https://api.crossref.org/works?filter=doi:10.1145/3658146",
+      "https://arxiv.org/abs/2406.13897",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=YcKFp4U2Voo&format=json",
+      "https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+    ],
+    "notes": [],
+    "award": {
+      "label": "Honorable Mention",
+      "conference": "SIGGRAPH 2024",
+      "source": "https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+    },
+    "authors_html": "<strong>Longwen Zhang</strong>, Ziyu Wang, Qixuan Zhang, Qiwei Qiu, Anqi Pang, Haoran Jiang, Wei Yang, Lan Xu, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2024</span> <a class=\"paper-award\" href=\"https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/\" aria-label=\"SIGGRAPH 2024 Honorable Mention: official award announcement\">Honorable Mention</a>",
+    "overview": "CLAY generates 3D geometry and physically based materials from text, images, and spatial guidance. A geometry autoencoder and diffusion transformer learn shape priors, while a separate material model produces coordinated texture maps. Controls including multiple views, point clouds, and bounding boxes let users steer the output, from early design ideas to detailed assets that can be rendered under different lighting.",
+    "overview_source": "https://arxiv.org/abs/2406.13897",
+    "gallery": [
+      {
+        "image": "assets/teasers/clay.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2406.13897",
+        "width": 3840,
+        "height": 2160,
+        "preview": "assets/teasers/thumbs/clay.webp"
+      },
+      {
+        "image": "assets/gallery/clay-history.webp",
+        "caption": "A collection of generated objects",
+        "source": "https://arxiv.org/html/2406.13897v1/fig/ga2.PNG",
+        "width": 3840,
+        "height": 2160,
+        "preview": "assets/gallery/thumbs/clay-history.webp"
+      },
+      {
+        "image": "assets/gallery/clay-creations.webp",
+        "caption": "Guiding geometry with different inputs",
+        "source": "https://arxiv.org/html/2406.13897v1/fig/ga3.jpg",
+        "width": 3840,
+        "height": 2160,
+        "preview": "assets/gallery/thumbs/clay-creations.webp"
+      }
+    ]
+  },
+  {
+    "id": "media2face",
+    "title": "Media2Face: Co-speech Facial Animation Generation With Multi-Modality Guidance",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/media2face"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3641519.3657413"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2401.15687"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=k-CO8bEOTyA"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/media2face",
+      "https://doi.org/10.1145/3641519.3657413",
+      "https://api.crossref.org/works?filter=doi:10.1145/3641519.3657413",
+      "https://arxiv.org/abs/2401.15687",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=k-CO8bEOTyA&format=json"
+    ],
+    "notes": [
+      "Use the SIGGRAPH video embedded in the project page; the earlier preprint video is not duplicated."
+    ],
+    "authors_html": "Qingcheng Zhao, Pengyu Long, Qixuan Zhang, Dafei Qin, Han Liang, <strong>Longwen Zhang</strong>, Yingliang Zhang, Jingyi Yu, Lan Xu",
+    "venue_html": "SIGGRAPH Conference Papers <span>· 2024</span>",
+    "overview": "Media2Face creates expressive 3D facial animation guided by speech and additional text or image cues. A generalized facial representation separates identity from expression and helps extract motion from videos to build a diverse, annotated training dataset. A diffusion model then generates facial motion in that representation, allowing variations in emotion and style alongside audio-driven performance.",
+    "overview_source": "https://arxiv.org/abs/2401.15687",
+    "gallery": [
+      {
+        "image": "assets/teasers/media2face.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2401.15687",
+        "width": 2560,
+        "height": 853,
+        "preview": "assets/teasers/thumbs/media2face.webp"
+      }
+    ]
+  },
+  {
+    "id": "gaussianhair",
+    "title": "GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://haiminluo.github.io/gaussianhair/"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2402.10483"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=hmNCF5TR8sw"
+      }
+    ],
+    "sources": [
+      "https://haiminluo.github.io/gaussianhair/",
+      "https://arxiv.org/abs/2402.10483",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=hmNCF5TR8sw&format=json"
+    ],
+    "notes": [],
+    "authors_html": "Haimin Luo, Min Ouyang, Zijun Zhao, Suyi Jiang, <strong>Longwen Zhang</strong>, Qixuan Zhang, Wei Yang, Lan Xu, Jingyi Yu",
+    "venue_html": "arXiv <span>· 2024</span>",
+    "overview": "GaussianHair models individual hair strands as connected cylindrical Gaussian primitives. This representation combines explicit strand structure with efficient differentiable rendering, while a dedicated scattering model captures how hair responds to light. The recovered geometry and appearance support changes to hairstyle, illumination, and motion, linking image-based reconstruction with conventional graphics workflows.",
+    "overview_source": "https://arxiv.org/abs/2402.10483",
+    "gallery": [
+      {
+        "image": "assets/teasers/gaussianhair.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2402.10483",
+        "width": 1585,
+        "height": 652,
+        "preview": "assets/teasers/thumbs/gaussianhair.webp"
+      },
+      {
+        "image": "assets/gallery/gaussianhair-editing.webp",
+        "caption": "Editing hair geometry and appearance",
+        "source": "https://haiminluo.github.io/gaussianhair/editing.png",
+        "width": 1864,
+        "height": 488,
+        "preview": "assets/gallery/thumbs/gaussianhair-editing.webp"
+      },
+      {
+        "image": "assets/gallery/gaussianhair-relight.webp",
+        "caption": "Hair under different illumination",
+        "source": "https://haiminluo.github.io/gaussianhair/relight.png",
+        "width": 1923,
+        "height": 1108,
+        "preview": "assets/gallery/thumbs/gaussianhair-relight.webp"
+      }
+    ]
+  },
+  {
+    "id": "dreamface",
+    "title": "DreamFace: Progressive Generation of Animatable 3D Faces under Text Guidance",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/dreamface"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3592094"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2304.03117"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=w4UzPaGssMM"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/dreamface",
+      "https://doi.org/10.1145/3592094",
+      "https://api.crossref.org/works?filter=doi:10.1145/3592094",
+      "https://arxiv.org/abs/2304.03117",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=w4UzPaGssMM&format=json"
+    ],
+    "notes": [
+      "Use the SIGGRAPH video embedded in the project page; the earlier preprint video is not duplicated."
+    ],
+    "authors_html": "<strong>Longwen Zhang</strong>, Qiwei Qiu, Hongyang Lin, Qixuan Zhang, Cheng Shi, Wei Yang, Ye Shi, Sibei Yang, Lan Xu, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2023</span>",
+    "overview": "DreamFace turns written descriptions into personalized 3D faces with geometry, materials, and animation controls. A progressive process refines facial shape and synthesizes appearance using diffusion models. The assets share a topology compatible with established graphics tools, while learned expression priors add person-specific deformation for animating the generated characters.",
+    "overview_source": "https://arxiv.org/abs/2304.03117",
+    "gallery": [
+      {
+        "image": "assets/teasers/dreamface.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2304.03117",
+        "width": 2560,
+        "height": 1019,
+        "preview": "assets/teasers/thumbs/dreamface.webp"
+      }
+    ]
+  },
+  {
+    "id": "hack",
+    "title": "HACK: Learning a Parametric Head and Neck Model for High-fidelity Animation",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/hack-model"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3592093"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2305.04469"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=0TCW0lPgK0E"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ZoneLikeWonderland/HACK-Model"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/hack-model",
+      "https://doi.org/10.1145/3592093",
+      "https://api.crossref.org/works?filter=doi:10.1145/3592093",
+      "https://arxiv.org/abs/2305.04469",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=0TCW0lPgK0E&format=json"
+    ],
+    "notes": [],
+    "authors_html": "<strong>Longwen Zhang</strong>, Zijun Zhao, Xinzhou Cong, Qixuan Zhang, Shuqi Gu, Yuchong Gao, Rui Zheng, Wei Yang, Lan Xu, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2023</span>",
+    "overview": "HACK models the head and neck together, connecting visible appearance and facial expression with the underlying cervical skeleton. Its training data combines ultrasound measurements with multi-view photometric capture. The learned representation separates shape, pose, expression, and larynx motion, giving artists anatomical controls for more expressive head-and-neck animation and motion transfer.",
+    "overview_source": "https://arxiv.org/abs/2305.04469",
+    "gallery": [
+      {
+        "image": "assets/teasers/hack.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2305.04469",
+        "width": 2250,
+        "height": 825,
+        "preview": "assets/teasers/thumbs/hack.webp"
+      }
+    ]
+  },
+  {
+    "id": "chatavatar",
+    "title": "ChatAvatar: Creating Hyper-realistic Physically-based 3D Facial Assets through AI-Driven Conversations",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://hyper3d.ai/features/chatavatar"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3588430.3597244"
+      }
+    ],
+    "sources": [
+      "https://hyper3d.ai/features/chatavatar",
+      "https://doi.org/10.1145/3588430.3597244",
+      "https://api.crossref.org/works?filter=doi:10.1145/3588430.3597244"
+    ],
+    "notes": [
+      "Project points to the official ChatAvatar product page. No distinct arXiv entry or verified academic YouTube presentation found; unrelated tutorials are omitted."
+    ],
+    "authors_html": "Qixuan Zhang, <strong>Longwen Zhang</strong>, Lan Xu, Di Wu, Jingyi Yu",
+    "venue_html": "SIGGRAPH Real-Time Live! <span>· 2023</span>",
+    "overview": "ChatAvatar creates detailed 3D facial assets through conversational text input. Diffusion-based generation and a dataset of production-ready faces support the creation of geometry and physically based materials. The workflow makes character creation accessible through natural-language descriptions while producing assets intended for conventional computer-graphics pipelines.",
+    "overview_source": "https://hyper3d.ai/features/chatavatar",
+    "gallery": [
+      {
+        "image": "assets/teasers/chatavatar.webp",
+        "caption": "Teaser",
+        "source": "https://hyper3d.ai/features/chatavatar",
+        "width": 1500,
+        "height": 1000,
+        "preview": "assets/teasers/thumbs/chatavatar.webp"
+      }
+    ]
+  },
+  {
+    "id": "sculptor",
+    "title": "SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://alittleball.github.io/"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3550454.3555462"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2209.06423"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=-yqZcK34Byo"
+      }
+    ],
+    "sources": [
+      "https://alittleball.github.io/",
+      "https://doi.org/10.1145/3550454.3555462",
+      "https://api.crossref.org/works?filter=doi:10.1145/3550454.3555462",
+      "https://arxiv.org/abs/2209.06423",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=-yqZcK34Byo&format=json"
+    ],
+    "notes": [],
+    "authors_html": "Zesong Qiu, Yuwei Li, Dongming He, Qixuan Zhang, <strong>Longwen Zhang</strong>, Yinghao Zhang, Jingya Wang, Lan Xu, Xudong Wang, Yuyao Zhang, Jingyi Yu",
+    "venue_html": "SIGGRAPH Asia · ACM TOG <span>· 2022</span>",
+    "overview": "SCULPTOR jointly models facial appearance and the skeleton underneath it. Built from paired CT observations in the LUCY dataset, its learned representation connects skull structure, facial geometry, and appearance. Separating shape, pose, and expression enables the creation and editing of faces with attention to both visual realism and anatomical consistency.",
+    "overview_source": "https://arxiv.org/abs/2209.06423",
+    "gallery": [
+      {
+        "image": "assets/teasers/sculptor.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2209.06423",
+        "width": 2002,
+        "height": 901,
+        "preview": "assets/teasers/thumbs/sculptor.webp"
+      }
+    ]
+  },
+  {
+    "id": "npfa",
+    "title": "Video-Driven Neural Physically-Based Facial Asset for Production",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://sites.google.com/view/npfa/"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3550454.3555445"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2202.05592"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=BifBssghYWQ"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ZoneLikeWonderland/NPFA"
+      }
+    ],
+    "sources": [
+      "https://sites.google.com/view/npfa/",
+      "https://doi.org/10.1145/3550454.3555445",
+      "https://api.crossref.org/works?filter=doi:10.1145/3550454.3555445",
+      "https://arxiv.org/abs/2202.05592",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=BifBssghYWQ&format=json"
+    ],
+    "notes": [],
+    "authors_html": "<strong>Longwen Zhang</strong>, Chuxiao Zeng, Qixuan Zhang, Hongyang Lin, Ruixiang Cao, Wei Yang, Lan Xu, Jingyi Yu",
+    "venue_html": "SIGGRAPH Asia · ACM TOG <span>· 2022</span>",
+    "overview": "This work learns production-oriented facial assets from video, combining dynamic geometry with physically based textures. Separate generative models represent expression, geometry, and appearance while shared mappings keep them coordinated. Fine wrinkle detail supports animated materials, and the resulting assets enable performer capture, motion transfer across identities, and explicit editing within established rendering workflows.",
+    "overview_source": "https://arxiv.org/abs/2202.05592",
+    "gallery": [
+      {
+        "image": "assets/teasers/npfa.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2202.05592",
+        "width": 2362,
+        "height": 1157,
+        "preview": "assets/teasers/thumbs/npfa.webp"
+      }
+    ]
+  },
+  {
+    "id": "nimble",
+    "title": "NIMBLE: A Non-rigid Hand Model with Bones and Muscles",
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://liyuwei.cc/proj/nimble"
+      },
+      {
+        "label": "ACM",
+        "url": "https://doi.org/10.1145/3528223.3530079"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2202.04533"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=NLJVOCnx4BE"
+      }
+    ],
+    "sources": [
+      "https://liyuwei.cc/proj/nimble",
+      "https://doi.org/10.1145/3528223.3530079",
+      "https://api.crossref.org/works?filter=doi:10.1145/3528223.3530079",
+      "https://arxiv.org/abs/2202.04533",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=NLJVOCnx4BE&format=json"
+    ],
+    "notes": [
+      "Use project URL without trailing slash (with slash returns 404). DOI is the TOG journal article, not the SIGGRAPH video record linked by arXiv."
+    ],
+    "authors_html": "Yuwei Li, <strong>Longwen Zhang</strong>, Zesong Qiu, Yingwenqi Jiang, Nianyi Li, Yuexin Ma, Yuyao Zhang, Lan Xu, Jingyi Yu",
+    "venue_html": "SIGGRAPH · ACM TOG <span>· 2022</span>",
+    "overview": "NIMBLE represents the hand through its bones, muscles, and skin rather than surface shape alone. Learned from MRI observations and appearance capture, the model relates internal anatomy to visible deformation and texture. It supports realistic hand animation and rendering, and can also provide synthetic examples or a differentiable representation for estimating hands from images.",
+    "overview_source": "https://arxiv.org/abs/2202.04533",
+    "gallery": [
+      {
+        "image": "assets/teasers/nimble.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2202.04533",
+        "width": 1535,
+        "height": 316,
+        "preview": "assets/teasers/thumbs/nimble.webp"
+      }
+    ]
+  },
+  {
+    "id": "nvpr",
+    "title": "Neural Video Portrait Relighting in Real-time via Consistency Modeling",
+    "links": [
+      {
+        "label": "Project",
+        "url": "projects/nvpr/"
+      },
+      {
+        "label": "CVF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Zhang_Neural_Video_Portrait_Relighting_in_Real-Time_via_Consistency_Modeling_ICCV_2021_paper.html"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2104.00484"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=fN1cgbsnUTc"
+      }
+    ],
+    "sources": [
+      "https://zhanglongwen.com/projects/nvpr/",
+      "https://arxiv.org/abs/2104.00484",
+      "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=fN1cgbsnUTc&format=json",
+      "https://openaccess.thecvf.com/content/ICCV2021/html/Zhang_Neural_Video_Portrait_Relighting_in_Real-Time_via_Consistency_Modeling_ICCV_2021_paper.html"
+    ],
+    "notes": [],
+    "authors_html": "<strong>Longwen Zhang</strong>, Qixuan Zhang, Minye Wu, Jingyi Yu, Lan Xu",
+    "venue_html": "ICCV <span>· 2021</span>",
+    "overview": "This work changes the lighting of portrait video while preserving consistency across frames. A neural model separates structure from illumination and learns from a dynamic dataset with individually controlled lights. Semantic, temporal, and lighting constraints help maintain stable appearance during motion, supporting interactive portrait relighting, including on mobile devices.",
+    "overview_source": "https://arxiv.org/abs/2104.00484",
+    "gallery": [
+      {
+        "image": "assets/teasers/nvpr.webp",
+        "caption": "Teaser",
+        "source": "https://arxiv.org/abs/2104.00484",
+        "width": 1295,
+        "height": 845,
+        "preview": "assets/teasers/thumbs/nvpr.webp"
+      }
+    ]
+  }
+]
