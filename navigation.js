@@ -42,9 +42,11 @@ document.querySelectorAll('[data-scroll-target]').forEach(button => {
     const frames = [...scroll.querySelectorAll('.gallery-frame')];
     const controls = [...scroll.querySelectorAll('[data-frame]')];
     const count = scroll.querySelector('.gallery-count');
+    const info = scroll.querySelector('.study');
     let queued = 0;
     function update() {
       queued = 0;
+      scroll.classList.toggle('has-tall-info', innerWidth > 800 && info.scrollHeight > scroll.clientHeight + 2);
       const center = scroll.getBoundingClientRect().top + scroll.clientHeight / 2;
       let active = 0, distance = Infinity;
       frames.forEach((frame, i) => {

@@ -67,6 +67,6 @@ markup=re.sub(r'\n<!-- Inline studies start -->.*?<!-- Inline studies end -->','
 styles=(ROOT/'gallery.css').read_text()+'\n'+(ROOT/'study-overlay.css').read_text()
 inline='\n<!-- Inline studies start -->\n<template id="study-styles"><style>'+styles+'</style></template>\n'+'\n'.join(inline_studies)+'\n<!-- Inline studies end -->\n'
 markup=markup.replace('</body>',inline+'</body>')
-for name in ['style.css','navigation.js']:
-    markup=re.sub(re.escape(name)+r'\?v=[^" ]+',name+'?v='+version(name),markup)
+for name in ['style.css','navigation.js','visitors.js']:
+    markup=re.sub(re.escape(name)+r'(?:\?v=[^" ]+)?',name+'?v='+version(name),markup)
 home.write_text(markup)

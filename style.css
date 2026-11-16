@@ -116,7 +116,7 @@ button:focus-visible{outline:2px solid var(--green);outline-offset:5px}
 .highlight{text-align:left;display:block;min-width:0}
 html{scrollbar-gutter:stable}
 body.study-open{position:fixed;top:var(--study-scroll-top);left:0;right:var(--study-scroll-gap,0px)}
-.study-view{--study-gap:clamp(32px,6dvh,64px);--study-height:calc(100dvh - var(--study-gap)*2);position:fixed;inset:var(--study-gap) 0 auto;width:100vw;max-width:none;height:var(--study-height);max-height:none;padding:0;margin:0;border:0;background:var(--paper);overflow:hidden;box-shadow:0 12px 50px #10181025}
+.study-view{--study-height:min(78dvh,760px);position:fixed;inset:0;width:100vw;max-width:none;height:var(--study-height);max-height:calc(100dvh - 64px);padding:0;margin:auto 0;border:0;background:var(--paper);overflow:hidden;box-shadow:0 12px 50px #10181025}
 .study-view::backdrop{background:rgba(28,32,28,.33)}
 .study-panel{height:100%;width:100%}
 .study-close{position:absolute;right:16px;top:12px;width:40px;height:40px;z-index:5;background:var(--paper);color:var(--ink);font:300 29px/1 var(--sans);cursor:pointer}
@@ -134,3 +134,20 @@ body.study-open{position:fixed;top:var(--study-scroll-top);left:0;right:var(--st
 html:has(.study-view[open]){scrollbar-gutter:auto}
 
 .study-close:focus-visible{outline:1px solid #74776f;outline-offset:0}
+
+/* A quiet, frameless visitor globe lives alongside the personal notes. */
+.more-about{grid-template-columns:.9fr 1.2fr 1fr 196px;gap:30px;align-items:start}
+.visitor-corner{width:196px;justify-self:end}
+.visitor-corner h3{font-size:11px;font-weight:500;color:var(--muted);margin-bottom:14px}
+.visitor-stage{position:relative;width:196px;min-height:139px}
+.visitor-preview{display:block;width:196px;height:112px;padding-top:8px}
+.visitor-live{width:196px;position:absolute;inset:0;opacity:0;transition:opacity .35s ease;pointer-events:none}
+.visitor-corner.has-live .visitor-live{opacity:1;pointer-events:auto}
+.visitor-corner.has-live .visitor-preview{visibility:hidden}
+.visitor-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:9px;color:#858b82;line-height:1.5}
+.visitor-caption a{font-size:9px;margin:0;color:var(--muted)}
+.visitor-live #mapmyvisitors-widget{max-width:196px}
+@media(max-width:900px){.more-about{grid-template-columns:1fr 1fr;gap:26px}.visitor-corner{justify-self:start}}
+@media(max-width:600px){.more-about{grid-template-columns:1fr}.visitor-corner{justify-self:center;margin-top:2px}}
+@media(prefers-reduced-motion:reduce){.visitor-live{transition:none}}
+@media print{.visitor-corner{display:none}}

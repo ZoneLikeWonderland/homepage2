@@ -14,3 +14,13 @@
 .is-embedded .study-back{margin-bottom:24px}
 @media(max-width:800px){.study{height:auto;padding-top:24px}.gallery-frame{min-height:0;padding-top:28px}.figure-media{max-height:calc(var(--study-height) - 90px)}}
 @media(prefers-reduced-motion:reduce){.figure-preview,.figure-full{transition:none}}
+/* The information column never creates its own scroll area. */
+.study{height:auto;min-height:var(--study-height);overflow:visible;padding-block:22px}
+.study h1{font-size:clamp(26px,2.1vw,34px)}
+.study-meta{margin-bottom:12px}.study-authors{margin-top:14px}
+.study-overview{margin-top:22px}.overview{font-size:12px;line-height:1.8}
+.resource-links{margin-top:20px}.gallery-index{padding-top:22px}
+.is-embedded .study-back{margin-bottom:20px}
+.study-scroll.has-tall-info .study{position:static;min-height:0}
+@media(max-width:800px){.study{min-height:0}.study h1{font-size:31px}.overview{font-size:14px}}
+@media(min-width:801px) and (max-height:820px){.study h1{font-size:27px}.study{padding-block:18px}.study-overview{margin-top:16px}.study-authors{font-size:10px}.overview{font-size:11px;line-height:1.75}.resource-links{margin-top:16px}.is-embedded .study-back{margin-bottom:16px}}

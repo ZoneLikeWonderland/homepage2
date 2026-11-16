@@ -40,6 +40,7 @@ ws.on('open',async()=>{try{
  let timings=[];
  for(const p of data){
   const {pos,ms}=await open(p.id);timings.push(ms);
+  assert(await ev(`getComputedStyle(${inside}.querySelector('.study')).overflowY`)==='visible','no independent info scrollbar '+p.id);
   assert(await ev(`${inside}.querySelector('h1').textContent`)===p.title,'correct study '+p.id);
   assert(await ev(`${inside}.querySelectorAll('.resource-links a').length`)===p.links.length,'resource links '+p.id);
   assert(await ev(`(()=>{let r=document.querySelector('dialog').getBoundingClientRect();return r.x===0&&r.width===innerWidth&&r.top>=30&&r.bottom<=innerHeight-30})()`),'full width with outer space');
@@ -51,9 +52,9 @@ ws.on('open',async()=>{try{
  assert(await ev(`${inside}.querySelector('.figure-media').classList.contains('is-ready')`),'full-quality fade completes');
  await shot('overlay-clay-desktop');
  assert(await ev(`(()=>{let r=${inside},s=r.querySelector('.study').getBoundingClientRect(),g=r.querySelector('.gallery-story').getBoundingClientRect();return s.right<g.left})()`),'split layout');
- await ev(`${inside}.querySelector('.study-scroll').scrollTo({top:880,behavior:'instant'})`);await delay(150);
+ await ev(`${inside}.querySelector('.study-scroll').scrollTo({top:${inside}.querySelector('.gallery-frame').offsetHeight,behavior:'instant'})`);await delay(150);
  assert(await ev(`${inside}.querySelector('.gallery-count').textContent.startsWith('02')`),'gallery scroll updates');
- const insideTop=await ev(`${inside}.querySelector('.study').getBoundingClientRect().top`);assert(Math.abs(insideTop-60)<2,'left remains sticky');
+ const insideTop=await ev(`${inside}.querySelector('.study').getBoundingClientRect().top`);assert(Math.abs(insideTop-await ev('document.querySelector("dialog").getBoundingClientRect().top'))<2,'left remains sticky');
  await shot('overlay-clay-second');
  assert(await ev(`${inside}.querySelectorAll('.figure-full')[1].dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true,button:2}))`),'right-click native');
  // Clicking the artwork does not dismiss, while both exposed outer strips do.

@@ -178,7 +178,10 @@ follows the visible reading order: text and links, then the teaser.
 
 External resource links open new tabs and remain on both the homepage and detail
 view. Homepage paper titles, teasers, and whitespace share one detail button.
-The overlay spans the viewport width, with 32–64 px exposed above and below.
+The overlay spans the viewport width, centered at 78% of the viewport height
+(up to 760 px), leaving exposed backdrop above and below. The information column
+has no independent scrolling. If text cannot fit a short viewport, it flows with
+the whole panel so that every link and paragraph remains reachable.
 The backdrop dims the original page; clicking either exposed strip, Close, Escape,
 or Publications restores the original list position. The panel fades in with a
 small upward movement and fades out on dismissal, respecting reduced motion. On narrow screens,
@@ -222,3 +225,21 @@ Coverage includes all 16 studies, pointer-only highlighting, restored focus/scro
 Enter/Space/Tab/Escape, rapid reopening, outside-click gesture boundaries, direct
 resource links, gallery scrolling, full-image loading and fallback previews,
 reduced motion, and touch emulation at responsive widths from 320 to 1440 pixels.
+
+## Visitor map
+
+`visitors.js` loads the official MapMyVisitors map only on `zhanglongwen.com`
+and `www.zhanglongwen.com`. Account email: zhanglw2@shanghaitech.edu.cn.
+Account credentials are kept outside this repository. Public visitor statistics:
+https://mapmyvisitors.com/web/1c9iv.
+
+The footer links to the provider's statistics. The live widget loads third-party
+scripts and sends visits to MapMyVisitors. Local previews never load the tracker;
+they show the static public-domain Natural Earth outline in `assets/visitors/`.
+The same outline remains visible if the provider is unavailable. It contains no
+fabricated visitor locations or counts. All provider links open in new tabs.
+The provider uses PNG map backgrounds internally; local research images remain WebP.
+
+The registered 3D globe's data endpoint returned HTML instead of JSONP during
+verification, so the owner selected the working map widget. The obsolete
+RevolverMaps embeds were removed from the retained NVPR documents.
