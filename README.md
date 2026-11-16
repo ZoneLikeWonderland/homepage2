@@ -204,7 +204,9 @@ are separate from the original-resolution files; saving still uses the full imag
 
 Row shading is restricted to mouse hover (`hover: hover` and `pointer: fine`).
 Returning keyboard focus to a study does not shade the row; keyboard focus keeps
-its own visible outline. Touch devices do not use sticky hover styling. Backdrop
+its own visible outline. Mouse/touch openers retain focus without an outline on
+return, including after Escape; subsequent keyboard navigation restores the focus
+indicator. Touch devices do not use sticky hover styling. Backdrop
 dismissal requires an uncancelled primary-button press and release outside the
 panel; right-clicks and drags out of the content do not dismiss it.
 

@@ -81,6 +81,32 @@ ws.on('open',async()=>{try{
  await cmd('Input.dispatchMouseEvent',{type:'mouseMoved',x:5,y:500});await delay(300);assert(await highlight()==='0','pointer leaving clears highlight');
  await ev('document.querySelector("#clay .paper-entry").focus()');await delay(300);assert(await highlight()==='0','keyboard focus does not highlight row');
  async function key(key,code,virtual,modifiers=0){await cmd('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode:virtual,modifiers,...(key==='Enter'?{text:'\r',unmodifiedText:'\r'}:key===' '?{text:' ',unmodifiedText:' '}:{})});await cmd('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode:virtual,modifiers})}
+ // Real pointer clicks, including Escape dismissal, must not leave a title/card ring.
+ async function mouseClick(point){
+  await cmd('Input.dispatchMouseEvent',{type:'mouseMoved',...point});
+  await cmd('Input.dispatchMouseEvent',{type:'mousePressed',...point,button:'left',clickCount:1});
+  await cmd('Input.dispatchMouseEvent',{type:'mouseReleased',...point,button:'left',clickCount:1});await delay(300);
+ }
+ const center=expression=>ev(`(()=>{let r=${expression}.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+ for(const selector of ['#clay h3','#clay .paper-teaser','.highlight[data-study-src="papers/clay/"]']){
+  for(const method of ['escape','backdrop','close','back']){
+   await ev(`document.querySelector(${JSON.stringify(selector)}).scrollIntoView({behavior:'instant',block:'center'})`);
+   await mouseClick(await center(`document.querySelector(${JSON.stringify(selector)})`));
+   assert(await ev('document.querySelector("dialog").open'),'real pointer opens '+selector);
+   if(method==='escape'){await key('Escape','Escape',27);await delay(300);await key('Escape','Escape',27);}
+   else if(method==='backdrop')await mouseClick({x:700,y:15});
+   else await mouseClick(await center(method==='close'?'document.querySelector(".study-close")':inside+'.querySelector(".study-back")'));
+   assert(await ev('!document.querySelector("dialog").open'),'pointer dismissal '+method);
+   assert(await ev('document.activeElement.matches("[data-study-src]")'),'pointer return retains focus');
+   assert(await ev('getComputedStyle(document.activeElement).outlineStyle')==='none','no residual outline '+selector+' '+method);
+   await cmd('Input.dispatchMouseEvent',{type:'mouseMoved',x:5,y:500});await delay(250);
+   assert(await highlight()==='0','pointer return leaves no row shading');
+   await key('Tab','Tab',9);await key('Tab','Tab',9,8);
+   assert(await ev('getComputedStyle(document.activeElement).outlineStyle')!=='none','Tab restores visible keyboard focus');
+  }
+ }
+ await shot('pointer-return-no-outline');
+ await ev('document.querySelector("#clay").scrollIntoView({behavior:"instant",block:"center"});document.querySelector("#clay .paper-entry").focus()');
  await key('Enter','Enter',13);await delay(300);assert(await ev('document.querySelector("dialog").open'),'Enter opens study');
  for(let i=0;i<30;i++){
   await key('Tab','Tab',9);
@@ -89,6 +115,7 @@ ws.on('open',async()=>{try{
  await key('Tab','Tab',9,8);await key('Escape','Escape',27);await delay(350);
  assert(await highlight()==='0','Escape restores focus without row highlight');
  assert(await ev('document.activeElement===document.querySelector("#clay .paper-entry")'),'keyboard focus restored');
+ assert(await ev('getComputedStyle(document.activeElement).outlineStyle')!=='none','keyboard opener keeps its visible focus ring');
  await key(' ','Space',32);await delay(300);assert(await ev('document.querySelector("dialog").open'),'Space opens study');
  // Right-click, pointer cancellation, and a drag ending outside must not dismiss.
  await ev(`(()=>{let d=document.querySelector('dialog');for(let type of ['pointerdown','pointerup'])d.dispatchEvent(new PointerEvent(type,{pointerId:77,isPrimary:true,button:2,clientX:700,clientY:10,bubbles:true}))})()`);
@@ -144,6 +171,7 @@ ws.on('open',async()=>{try{
  await tap(touchPoint.x,touchPoint.y);assert(await ev('document.querySelector("dialog").open'),'touch opens study');
  await tap(180,15);assert(await ev('!document.querySelector("dialog").open'),'touch backdrop closes');
  assert(await highlight()==='0','touch close leaves no hover highlight');
+ assert(await ev('getComputedStyle(document.activeElement).outlineStyle')==='none','touch close leaves no focus ring');
  await cmd('Emulation.setTouchEmulationEnabled',{enabled:false});
  await cmd('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await open('clay');
  assert(await ev('getComputedStyle(document.querySelector("dialog")).animationName')==='none','reduced motion');

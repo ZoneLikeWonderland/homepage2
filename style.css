@@ -94,6 +94,7 @@
 /* Each paper opens a study; resource links remain directly accessible. */
 button{font:inherit;color:inherit;border:0;background:none;padding:0;cursor:pointer}
 button:focus-visible{outline:2px solid var(--green);outline-offset:5px}
+[data-study-src].pointer-return:focus{outline:none}
 .site-header nav button{padding:8px 0}
 .site-header nav button:hover,.year-nav button:hover{text-decoration:underline;text-underline-offset:6px}
 .site-footer button{color:var(--green)}

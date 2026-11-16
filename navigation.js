@@ -19,7 +19,7 @@ document.querySelectorAll('[data-scroll-target]').forEach(button => {
   root.append(scroll);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const warmImages = new Map();
-  let opener, savedScroll = 0, cleanup = () => {}, outsidePointer = null, closeTimer;
+  let opener, pointerOpened = false, savedScroll = 0, cleanup = () => {}, outsidePointer = null, closeTimer;
   const templateFor = button => document.getElementById('study-' + button.dataset.studySrc.split('/')[1]);
   function warm(template) {
     const src = template?.content.querySelector('.figure-full')?.getAttribute('src');
@@ -30,6 +30,9 @@ document.querySelectorAll('[data-scroll-target]').forEach(button => {
   }
   function close() {
     if (!view.open || view.classList.contains('is-closing')) return;
+    // Escape must not turn a mouse/touch opener into a keyboard focus ring.
+    // Set this before native dialog.close() restores focus, avoiding a flash.
+    opener?.classList.toggle('pointer-return', pointerOpened);
     if (reduce.matches) { view.close(); return; }
     view.classList.add('is-closing');
     closeTimer = setTimeout(() => view.close(), 170);
@@ -83,10 +86,11 @@ document.querySelectorAll('[data-scroll-target]').forEach(button => {
     button.addEventListener('pointerenter', () => { warmTimer = setTimeout(() => warm(templateFor(button)), 140); });
     button.addEventListener('pointerleave', () => clearTimeout(warmTimer));
     button.addEventListener('focus', () => warm(templateFor(button)));
-    button.addEventListener('click', () => {
+    button.addEventListener('blur', () => button.classList.remove('pointer-return'));
+    button.addEventListener('click', event => {
       const template = templateFor(button);
       if (!template || view.open) return;
-      opener = button; savedScroll = scrollY;
+      opener = button; pointerOpened = event.detail > 0; savedScroll = scrollY;
       view.setAttribute('aria-label', template.dataset.title);
       mount(template);
       document.body.style.setProperty('--study-scroll-top', `-${savedScroll}px`);
@@ -97,6 +101,11 @@ document.querySelectorAll('[data-scroll-target]').forEach(button => {
       scroll.scrollTop = 0;
       view.querySelector('.study-close').focus({preventScroll:true});
     });
+  });
+  document.addEventListener('keydown', event => {
+    if (!view.open && ['Tab', 'Enter', ' '].includes(event.key)) {
+      opener?.classList.remove('pointer-return');
+    }
   });
   const outside = event => {
     const r = view.getBoundingClientRect();
