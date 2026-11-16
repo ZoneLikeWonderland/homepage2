@@ -76,12 +76,12 @@
     "overview_source": "https://wangzh1.github.io/GenPIE/",
     "gallery": [
       {
-        "image": "assets/teasers/genpie.webp",
+        "image": "assets/teasers/genpie-alpha.webp",
         "caption": "Teaser",
         "source": "https://wangzh1.github.io/GenPIE/",
         "width": 2560,
         "height": 1377,
-        "preview": "assets/teasers/thumbs/genpie.webp"
+        "preview": "assets/teasers/thumbs/genpie-alpha.webp"
       }
     ]
   },
@@ -224,12 +224,12 @@
     "overview_source": "https://arxiv.org/abs/2502.12894",
     "gallery": [
       {
-        "image": "assets/teasers/cast.webp",
+        "image": "assets/teasers/cast-alpha.webp",
         "caption": "Teaser",
         "source": "https://arxiv.org/abs/2502.12894",
         "width": 2560,
         "height": 922,
-        "preview": "assets/teasers/thumbs/cast.webp"
+        "preview": "assets/teasers/thumbs/cast-alpha.webp"
       },
       {
         "image": "assets/gallery/cast-scenes.webp",
@@ -276,12 +276,12 @@
     "overview_source": "https://arxiv.org/abs/2409.07441",
     "gallery": [
       {
-        "image": "assets/teasers/transgs.webp",
+        "image": "assets/teasers/transgs-alpha.webp",
         "caption": "Teaser",
         "source": "https://arxiv.org/abs/2409.07441",
         "width": 2560,
         "height": 856,
-        "preview": "assets/teasers/thumbs/transgs.webp"
+        "preview": "assets/teasers/thumbs/transgs-alpha.webp"
       }
     ]
   },
@@ -434,20 +434,20 @@
         "preview": "assets/teasers/thumbs/gaussianhair.webp"
       },
       {
-        "image": "assets/gallery/gaussianhair-editing.webp",
+        "image": "assets/gallery/gaussianhair-editing-alpha.webp",
         "caption": "Editing hair geometry and appearance",
         "source": "https://haiminluo.github.io/gaussianhair/editing.png",
         "width": 1864,
         "height": 488,
-        "preview": "assets/gallery/thumbs/gaussianhair-editing.webp"
+        "preview": "assets/gallery/thumbs/gaussianhair-editing-alpha.webp"
       },
       {
-        "image": "assets/gallery/gaussianhair-relight.webp",
+        "image": "assets/gallery/gaussianhair-relight-alpha.webp",
         "caption": "Hair under different illumination",
         "source": "https://haiminluo.github.io/gaussianhair/relight.png",
         "width": 1923,
         "height": 1108,
-        "preview": "assets/gallery/thumbs/gaussianhair-relight.webp"
+        "preview": "assets/gallery/thumbs/gaussianhair-relight-alpha.webp"
       }
     ]
   },
@@ -664,12 +664,12 @@
     "overview_source": "https://arxiv.org/abs/2202.05592",
     "gallery": [
       {
-        "image": "assets/teasers/npfa.webp",
+        "image": "assets/teasers/npfa-alpha.webp",
         "caption": "Teaser",
         "source": "https://arxiv.org/abs/2202.05592",
         "width": 2362,
         "height": 1157,
-        "preview": "assets/teasers/thumbs/npfa.webp"
+        "preview": "assets/teasers/thumbs/npfa-alpha.webp"
       }
     ]
   },
@@ -753,12 +753,12 @@
     "overview_source": "https://arxiv.org/abs/2104.00484",
     "gallery": [
       {
-        "image": "assets/teasers/nvpr.webp",
+        "image": "assets/teasers/nvpr-alpha.webp",
         "caption": "Teaser",
         "source": "https://arxiv.org/abs/2104.00484",
         "width": 1295,
         "height": 845,
-        "preview": "assets/teasers/thumbs/nvpr.webp"
+        "preview": "assets/teasers/thumbs/nvpr-alpha.webp"
       }
     ]
   }

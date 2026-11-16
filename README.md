@@ -76,7 +76,7 @@ paper and project links. The figures retain their original authorship and rights
   <https://arxiv.org/html/2406.13897v1/fig/realteaser_c.jpg>
 - `assets/bang.webp`: BANG teaser —
   <https://arxiv.org/html/2507.21493v1/figs/teaser3.jpg>
-- `assets/cast.webp`: CAST teaser —
+- `assets/cast-alpha.webp`: CAST teaser —
   <https://arxiv.org/html/2502.12894v1/figs/teaser.png>
 
 ## Publication teasers
@@ -250,3 +250,19 @@ working through a proxy. Its 3D data endpoint also returned HTML rather than
 JSONP. No third-party service has a guaranteed lifetime: the local outline and
 layout remain independent, and the image/statistics URLs can be replaced without
 changing the rest of the site. Old counts do not transfer automatically.
+
+## Transparency preservation
+
+The original CAST teaser has 461,043 partially or fully transparent pixels out
+of 3,240,000 (14.23%). Its separate scene-gallery source is fully opaque.
+The source audit also found real transparency in TransGS, GenPIE, NPFA and NVPR
+teasers, plus GaussianHair's editing and relighting gallery figures. Their 15
+served variants now retain alpha, with `-alpha.webp` URLs to bypass stale opaque
+image caches. Dimensions are unchanged. Color uses WebP quality 95 compression;
+every encoded alpha channel was compared pixel-for-pixel to the resized source.
+Fully opaque originals, including CLAY and BANG JPEGs, were not modified.
+
+Use `python3 scripts/convert-webp.py SOURCE DEST --width WIDTH --height HEIGHT`
+when converting images (Pillow required for this editing tool only). It preserves
+RGBA and palette transparency and checks the saved alpha channel. Do not flatten
+transparent scientific figures to RGB or manufacture transparency in opaque ones.
