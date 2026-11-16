@@ -1,0 +1,488 @@
+{
+  "checked_on": "2026-11-16",
+  "publications": [
+    {
+      "id": "sato",
+      "title": "Strips as Tokens: Artist Mesh Generation with Native UV Segmentation",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://ruixu.me/html/SATO/index.html"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3811286"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2604.09132"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Xrvitd/SATO"
+        }
+      ],
+      "sources": [
+        "https://ruixu.me/html/SATO/index.html",
+        "https://doi.org/10.1145/3811286",
+        "https://api.crossref.org/works?filter=doi:10.1145/3811286",
+        "https://arxiv.org/abs/2604.09132"
+      ],
+      "notes": [
+        "No verified author-provided YouTube video found."
+      ]
+    },
+    {
+      "id": "genpie",
+      "title": "GenPIE: A Time-Resolved Plenoptic Imager",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://wangzh1.github.io/GenPIE/"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3811281"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=sbeHkw42Q34"
+        }
+      ],
+      "sources": [
+        "https://wangzh1.github.io/GenPIE/",
+        "https://doi.org/10.1145/3811281",
+        "https://api.crossref.org/works?filter=doi:10.1145/3811281",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=sbeHkw42Q34&format=json"
+      ],
+      "notes": [
+        "No verified arXiv entry found; project provides a local paper PDF."
+      ]
+    },
+    {
+      "id": "tapestry",
+      "title": "TAPESTRY: From Geometry to Appearance via Consistent Turntable Videos",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://zerone182.github.io/TAPESTRY/"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2603.17735"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=CJGO7si86RU"
+        }
+      ],
+      "sources": [
+        "https://zerone182.github.io/TAPESTRY/",
+        "https://arxiv.org/abs/2603.17735",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=CJGO7si86RU&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "bang",
+      "title": "BANG: Dividing 3D Assets via Generative Exploded Dynamics",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/bang7355608"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3730840"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2507.21493"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=UL5nSyg2Aps"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/bang7355608",
+        "https://doi.org/10.1145/3730840",
+        "https://api.crossref.org/works?filter=doi:10.1145/3730840",
+        "https://arxiv.org/abs/2507.21493",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=UL5nSyg2Aps&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "cast",
+      "title": "CAST: Component-Aligned 3D Scene Reconstruction from an RGB Image",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/cast4"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3730841"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2502.12894"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=cloVLY6lWdI"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/cast4",
+        "https://doi.org/10.1145/3730841",
+        "https://api.crossref.org/works?filter=doi:10.1145/3730841",
+        "https://arxiv.org/abs/2502.12894",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=cloVLY6lWdI&format=json",
+        "https://blog.siggraph.org/2025/06/siggraph-2025-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+      ],
+      "notes": [],
+      "award": {
+        "label": "Best Paper",
+        "conference": "SIGGRAPH 2025",
+        "source": "https://blog.siggraph.org/2025/06/siggraph-2025-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+      }
+    },
+    {
+      "id": "transgs",
+      "title": "Instant Gaussian Splatting Generation for High-Quality and Real-Time Facial Asset Rendering",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://dafei-qin.github.io/TransGS.github.io/"
+        },
+        {
+          "label": "IEEE",
+          "url": "https://doi.org/10.1109/TPAMI.2025.3550195"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2409.07441"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=MQTm3WTQ3KI"
+        }
+      ],
+      "sources": [
+        "https://dafei-qin.github.io/TransGS.github.io/",
+        "https://doi.org/10.1109/TPAMI.2025.3550195",
+        "https://api.crossref.org/works?filter=doi:10.1109/TPAMI.2025.3550195",
+        "https://arxiv.org/abs/2409.07441",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=MQTm3WTQ3KI&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "clay",
+      "title": "CLAY: A Controllable Large-scale Generative Model for Creating High-quality 3D Assets",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/clay-3dlm"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3658146"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2406.13897"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=YcKFp4U2Voo"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/clay-3dlm",
+        "https://doi.org/10.1145/3658146",
+        "https://api.crossref.org/works?filter=doi:10.1145/3658146",
+        "https://arxiv.org/abs/2406.13897",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=YcKFp4U2Voo&format=json",
+        "https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+      ],
+      "notes": [],
+      "award": {
+        "label": "Honorable Mention",
+        "conference": "SIGGRAPH 2024",
+        "source": "https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+      }
+    },
+    {
+      "id": "media2face",
+      "title": "Media2Face: Co-speech Facial Animation Generation With Multi-Modality Guidance",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/media2face"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3641519.3657413"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2401.15687"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=k-CO8bEOTyA"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/media2face",
+        "https://doi.org/10.1145/3641519.3657413",
+        "https://api.crossref.org/works?filter=doi:10.1145/3641519.3657413",
+        "https://arxiv.org/abs/2401.15687",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=k-CO8bEOTyA&format=json"
+      ],
+      "notes": [
+        "Use the SIGGRAPH video embedded in the project page; the earlier preprint video is not duplicated."
+      ]
+    },
+    {
+      "id": "gaussianhair",
+      "title": "GaussianHair: Hair Modeling and Rendering with Light-aware Gaussians",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://haiminluo.github.io/gaussianhair/"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2402.10483"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=hmNCF5TR8sw"
+        }
+      ],
+      "sources": [
+        "https://haiminluo.github.io/gaussianhair/",
+        "https://arxiv.org/abs/2402.10483",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=hmNCF5TR8sw&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "dreamface",
+      "title": "DreamFace: Progressive Generation of Animatable 3D Faces under Text Guidance",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/dreamface"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3592094"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2304.03117"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=w4UzPaGssMM"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/dreamface",
+        "https://doi.org/10.1145/3592094",
+        "https://api.crossref.org/works?filter=doi:10.1145/3592094",
+        "https://arxiv.org/abs/2304.03117",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=w4UzPaGssMM&format=json"
+      ],
+      "notes": [
+        "Use the SIGGRAPH video embedded in the project page; the earlier preprint video is not duplicated."
+      ]
+    },
+    {
+      "id": "hack",
+      "title": "HACK: Learning a Parametric Head and Neck Model for High-fidelity Animation",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/hack-model"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3592093"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2305.04469"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=0TCW0lPgK0E"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/ZoneLikeWonderland/HACK-Model"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/hack-model",
+        "https://doi.org/10.1145/3592093",
+        "https://api.crossref.org/works?filter=doi:10.1145/3592093",
+        "https://arxiv.org/abs/2305.04469",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=0TCW0lPgK0E&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "chatavatar",
+      "title": "ChatAvatar: Creating Hyper-realistic Physically-based 3D Facial Assets through AI-Driven Conversations",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://hyper3d.ai/features/chatavatar"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3588430.3597244"
+        }
+      ],
+      "sources": [
+        "https://hyper3d.ai/features/chatavatar",
+        "https://doi.org/10.1145/3588430.3597244",
+        "https://api.crossref.org/works?filter=doi:10.1145/3588430.3597244"
+      ],
+      "notes": [
+        "Project points to the official ChatAvatar product page. No distinct arXiv entry or verified academic YouTube presentation found; unrelated tutorials are omitted."
+      ]
+    },
+    {
+      "id": "sculptor",
+      "title": "SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://alittleball.github.io/"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3550454.3555462"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2209.06423"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=-yqZcK34Byo"
+        }
+      ],
+      "sources": [
+        "https://alittleball.github.io/",
+        "https://doi.org/10.1145/3550454.3555462",
+        "https://api.crossref.org/works?filter=doi:10.1145/3550454.3555462",
+        "https://arxiv.org/abs/2209.06423",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=-yqZcK34Byo&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "npfa",
+      "title": "Video-Driven Neural Physically-Based Facial Asset for Production",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://sites.google.com/view/npfa/"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3550454.3555445"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2202.05592"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=BifBssghYWQ"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/ZoneLikeWonderland/NPFA"
+        }
+      ],
+      "sources": [
+        "https://sites.google.com/view/npfa/",
+        "https://doi.org/10.1145/3550454.3555445",
+        "https://api.crossref.org/works?filter=doi:10.1145/3550454.3555445",
+        "https://arxiv.org/abs/2202.05592",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=BifBssghYWQ&format=json"
+      ],
+      "notes": []
+    },
+    {
+      "id": "nimble",
+      "title": "NIMBLE: A Non-rigid Hand Model with Bones and Muscles",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://liyuwei.cc/proj/nimble"
+        },
+        {
+          "label": "ACM",
+          "url": "https://doi.org/10.1145/3528223.3530079"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2202.04533"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=NLJVOCnx4BE"
+        }
+      ],
+      "sources": [
+        "https://liyuwei.cc/proj/nimble",
+        "https://doi.org/10.1145/3528223.3530079",
+        "https://api.crossref.org/works?filter=doi:10.1145/3528223.3530079",
+        "https://arxiv.org/abs/2202.04533",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=NLJVOCnx4BE&format=json"
+      ],
+      "notes": [
+        "Use project URL without trailing slash (with slash returns 404). DOI is the TOG journal article, not the SIGGRAPH video record linked by arXiv."
+      ]
+    },
+    {
+      "id": "nvpr",
+      "title": "Neural Video Portrait Relighting in Real-time via Consistency Modeling",
+      "links": [
+        {
+          "label": "Project",
+          "url": "projects/nvpr/"
+        },
+        {
+          "label": "CVF",
+          "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Zhang_Neural_Video_Portrait_Relighting_in_Real-Time_via_Consistency_Modeling_ICCV_2021_paper.html"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2104.00484"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=fN1cgbsnUTc"
+        }
+      ],
+      "sources": [
+        "https://zhanglongwen.com/projects/nvpr/",
+        "https://arxiv.org/abs/2104.00484",
+        "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=fN1cgbsnUTc&format=json",
+        "https://openaccess.thecvf.com/content/ICCV2021/html/Zhang_Neural_Video_Portrait_Relighting_in_Real-Time_via_Consistency_Modeling_ICCV_2021_paper.html"
+      ],
+      "notes": []
+    }
+  ]
+}
